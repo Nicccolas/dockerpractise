@@ -1,0 +1,9 @@
+services:
+  analysis-env:
+    image: nzhu02/testimage
+    ports:
+      - "8787:8787"
+    volumes:
+      - .:/home/rstudio/piyya
+    environment:
+      PASSWORD: "password"
